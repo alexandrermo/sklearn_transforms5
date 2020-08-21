@@ -1,4 +1,6 @@
 from setuptools import setup
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
 
 
 setup(
