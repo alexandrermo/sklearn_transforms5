@@ -24,3 +24,12 @@ class TransformAle(BaseEstimator, TransformerMixin):
         data = X.copy()
         data.fillna(data["NOTA_DE", "NOTA_EM", "NOTA_MF", "NOTA_GO"].mean(axis='columns')
         return data
+                    
+class TransformAle2(BaseEstimator, TransformerMixin):
+    def fit(self, X, y=None):
+        return self
+    
+    def transform(self, X):
+        data = X.copy()
+        data.fillna(data["NOTA_DE", "NOTA_EM", "NOTA_MF", "NOTA_GO"].mean(axis='columns')
+        return data
